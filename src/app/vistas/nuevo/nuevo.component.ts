@@ -31,7 +31,7 @@ export class NuevoComponent implements OnInit {
     pacienteId: new FormControl(''),
     fechaNacimiento: new FormControl('')
   });
-  constructor(private router: Router, private alerta: AlertasService, private api: ApiService) { }
+  constructor(private router: Router, private alertas: AlertasService, private api: ApiService) { }
 
   ngOnInit(): void {
     let token = localStorage.getItem('token');
@@ -42,7 +42,7 @@ export class NuevoComponent implements OnInit {
 
   postForm() {
     this.api.postPatient(<PacienteI>this.nuevoForm.value).subscribe(data => {
-      console.log(data);
+      this.alertas.showSuccess('Paciente Agregado', 'Hecho');
     });
   }
 
