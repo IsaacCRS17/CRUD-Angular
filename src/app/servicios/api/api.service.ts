@@ -6,6 +6,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from "rxjs";
 
 import { ListaPacientesI } from "../../modelos/listapacientes.interface";
+
+import { PacienteI } from "../../modelos/paciente.interface";
 @Injectable({
   providedIn: 'root'
 })
@@ -23,5 +25,31 @@ export class ApiService {
   getAllPatients(pagne:number):Observable<ListaPacientesI[]>{
     let direccion = this.url + "pacientes?page=" +pagne;
     return this.http.get<ListaPacientesI[]>(direccion);
+  }
+
+  getSinglePactient(id:any):Observable<PacienteI[]>{
+    let direccion = this.url+"pacientes?id="+id;
+    return this.http.get<PacienteI[]>(direccion);
+  }
+
+  putPatient(paciente:PacienteI):Observable<ResponseI>{
+    let direccion = this.url+"pacientes";
+    return this.http.put<ResponseI>(direccion, paciente);
+  }
+
+  deletePatient(paciente:PacienteI):Observable<ResponseI>{
+    let direccion = this.url+ "pacientes";
+    let Options={
+      headers: new HttpHeaders({
+        'Content-type':'application/json'
+      }),
+      body:paciente
+    }
+    return this.http.delete<ResponseI>(direccion,Options);
+  }
+
+  postPatient(paciente:PacienteI):Observable<ResponseI>{
+    let direccion = this.url+ "pacientes";
+    return this.http.post<ResponseI>(direccion, paciente);
   }
 }

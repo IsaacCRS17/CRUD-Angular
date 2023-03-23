@@ -22,4 +22,12 @@ export class DashboardComponent implements OnInit{
       this.pacientes=data;
     })
   }
+
+  editarPaciente(id:any){
+    this.router.navigate(['editar', id])
+  }
+
+  nuevoPaciente(){
+    this.router.navigate(['nuevo'])
+  }
 }

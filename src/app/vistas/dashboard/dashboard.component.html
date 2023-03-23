@@ -2,7 +2,7 @@
 
 <div class="container">
   <h3>Lista de Pacientes</h3>
-  <button type="button" class="btn btn-primary">Nuevo Paciente</button>
+  <button type="button" class="btn btn-primary" (click)="nuevoPaciente()">Nuevo Paciente</button>
 
   <table class="table table-hover table-white">
     <thead>
@@ -15,7 +15,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let paciente of pacientes">
+      <tr *ngFor="let paciente of pacientes" (click)="editarPaciente(paciente.PacienteId)">
         <th scope="row">{{ paciente.PacienteId }} </th>
         <td>{{ paciente.Nombre }}</td>
         <td>{{ paciente.DNI }}</td>
