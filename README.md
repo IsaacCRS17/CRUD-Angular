@@ -1,3 +1,11 @@
+Este aplicativo, se desarrollo para implementar los conocimientos de ANGULAR
+
+Se utilizó un API Rest Local hecha con PHP y MySQL
+
+Se utilizó la metodología API REST, Angular, Boostrap y Toastr
+
+Se utilizó Visual Studio Code
+
 # CRUDAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
