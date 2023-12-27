@@ -1,10 +1,29 @@
-Este aplicativo, se desarrollo para implementar los conocimientos de ANGULAR
+# Proyecto CRUD Angular para Gestión de Pacientes 🏥
 
-Se utilizó un API Rest Local hecha con PHP y MySQL
+¡Bienvenido este repositorio del proyecto CRUD Angular diseñado para gestionar información de pacientes de una clínica! Aquí encontrarás una aplicación simple pero poderosa que utiliza Angular para implementar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en un modelo de datos de pacientes. El proyecto también incluye un sistema de autenticación mediante JWT (JSON Web Tokens), interfaces personalizadas de respuesta (`responseI`), observables de RxJS para manejar flujos asíncronos y la biblioteca `ngx-toastr` para mostrar alertas de manera elegante.
 
-Se utilizó la metodología API REST, Angular, Boostrap y Toastr
+## Funcionalidades Principales 🚀
 
-Se utilizó Visual Studio Code
+- **Autenticación con JWT**: Implementación de un sistema de inicio de sesión seguro utilizando JSON Web Tokens para la autenticación de usuarios.
+- **Operaciones CRUD**: Gestión completa de pacientes con las operaciones habituales de Crear, Leer, Actualizar y Eliminar.
+- **Interfaces Personalizadas**: Uso de interfaces (`responseI`) para estandarizar y estructurar las respuestas de las operaciones CRUD.
+- **RxJS Observables**: Utilización de observables de RxJS para manejar flujos asíncronos de manera eficiente.
+- **Alertas Elegantes**: Integración de `ngx-toastr` para mostrar alertas amigables y visualmente atractivas.
+
+## Tecnologías Utilizadas 🛠️
+
+- **Angular**: Desarrollo del frontend utilizando el framework Angular.
+- **Bootstrap 5**: Diseño moderno y responsivo gracias a Bootstrap 5.
+- **RxJS**: Manejo eficiente de eventos y flujos asíncronos con observables de RxJS.
+- **JSON Web Tokens (JWT)**: Implementación segura de autenticación para proteger las rutas y operaciones.
+- **ngx-toastr**: Biblioteca para mostrar alertas y notificaciones de forma elegante.
+
+## Requisitos Previos 📋
+
+Asegúrate de tener Node.js y Angular CLI instalados en tu sistema antes de ejecutar la aplicación.
+
+
+<hr widht="50%">
 
 # CRUDAngular
 
